@@ -24,6 +24,7 @@ mongo_username=
 mongo_password=
 mongo_hostname=
 mongo_port=
+mongo_appName=
 ```
 
 ### Project Setup
