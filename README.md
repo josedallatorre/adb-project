@@ -38,3 +38,7 @@ python -m venv venv
 venv\Scripts\activate
 ```
 * Run the first cell in the exercise.ipynb file to install the packages and update the pip 
+
+### Notes
+
+All images related to the project should be inside the assets folder.
