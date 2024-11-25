@@ -164,3 +164,7 @@ cython_debug/
 # don't upload entire dataset
 *.csv
 *.json
+
+
+### personla folders 
+finance_transaction/
