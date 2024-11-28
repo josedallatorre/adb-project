@@ -25,10 +25,10 @@ DB_NAME = 'project_test'
 
 def check_folder(fname = 'analysis_data'):
     if fname not in os.listdir():
-        print(f"Download the analysis_data folder from here : {https://drive.google.com/drive/folders/1BrAQD46z9uVs4QXoTM3cGTnPyffiumoT?usp=drive_link}")
+        print("Download the analysis_data folder from here : {https://www.kaggle.com/datasets/computingvictor/transactions-fraud-datasets}")
         exit()
 
-def reset_sqlite_database(engine, dbname : str):
+def reset_mysql_database(engine, dbname : str):
     with engine.connect() as connection:
         connection.execute(text(f"DROP DATABASE IF EXISTS {dbname}"))
         connection.execute(text(f"CREATE DATABASE {dbname}"))
@@ -47,7 +47,7 @@ def main():
 
     db_url = f"mysql+mysqlconnector://{MYSQL_CONFIG['username']}:{MYSQL_CONFIG['password']}@{MYSQL_CONFIG['host']}:3306"
     engine = create_engine(db_url)
-    reset_sqlite_database(engine, dbname = DB_NAME)
+    reset_mysql_database(engine, dbname = DB_NAME)
     db_url = f"mysql+mysqlconnector://{MYSQL_CONFIG['username']}:{MYSQL_CONFIG['password']}@{MYSQL_CONFIG['host']}:3306/{DB_NAME}"
     engine = create_engine(db_url)
 
