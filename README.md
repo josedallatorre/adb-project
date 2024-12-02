@@ -27,19 +27,6 @@ mongo_port=
 mongo_appName=
 ```
 
-### Project Setup
-
-* Navigate to the project folder.
-* Create a virtual environment:
-```plaintext
-python -m venv venv
-```
-* Activate the environment:
-```plaintext
-venv\Scripts\activate
-```
-* Run the first cell in the exercise.ipynb file to install the packages and update the pip 
-
 ### Dataset Components
 
 1. Transaction Data (transactions_data.csv)
