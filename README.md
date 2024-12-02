@@ -45,8 +45,3 @@ mongo_appName=
 * Demographic information about customers
 * Account-related details
 * Enables customer segmentation and personalized analysis
-
-### Notes
-* Use these cleaned datasets from [drive](https://drive.google.com/drive/folders/1BrAQD46z9uVs4QXoTM3cGTnPyffiumoT?usp=sharing)
-* Run the upload_to_dbs.py first
-* All images related to the project should be inside the assets folder.
